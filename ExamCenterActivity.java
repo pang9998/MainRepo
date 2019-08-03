@@ -68,35 +68,6 @@ public class ExamCenterActivity extends BaseActivity {
     }
 
     @Override
-    public void viewClick(View view) {
-        //  toast("hello");
-        switch (view.getId()) {
-            case R.id.btn_motion: { //情绪
-                toActivity(ExamLibsActivity.class, putExtraInt(EXAM_TYPE, EXAM_TYPE_MOOD));
-                break;
-            }
-            case R.id.btn_self: {//自我
-                toast("自我");
-                toActivity(ExamLibsActivity.class, putExtraInt(EXAM_TYPE, EXAM_TYPE_MYSELF));
-                break;
-            }
-            case R.id.btn_study: {//学习动力
-                toast("学习动力");
-                toActivity(ExamLibsActivity.class, putExtraInt(EXAM_TYPE, EXAM_TYPE_LEARNING));
-                break;
-            }
-            case R.id.btn_relation: {//人际关系
-                toast("人际关系");
-                toActivity(ExamLibsActivity.class, putExtraInt(EXAM_TYPE, EXAM_TYPE_RELATION));
-                break;
-            }
-            default:
-                break;
-
-        }
-    }
-
-    @Override
     public void onHttpEnd(XRequest<JsonObject> request, XResponse<JsonObject> response) {
         super.onHttpEnd(request, response);
 
