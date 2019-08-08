@@ -1,10 +1,10 @@
-/******************************************************************************************
- * 文件名		  :	VoiceProject.c
+﻿/******************************************************************************************
+ * 文件名		:	VoiceProject.c
  * 功能		  	:	声音检测系统
  * 作者		  	:	cp1300@139.com
  * 创建时间		:	2018-03-09
- * 最后修改时间	:	2018-03-09
- * 详细:
+ * 最后修改时间		:	2018-03-09
+ * 详细			:
 *******************************************************************************************/
 
 #include "sys.h"
@@ -41,10 +41,10 @@
 extern u8 ipbuf[16];
 
 extern u8 voice_status;
-#define RECV_SIZE 100 // 10 *512 =5.2kB
-nmea_msg gpsx; 											    // GPS信息
-__align(4) u8 dtbuf[50];   								    // 打印缓存器
-const u8 *fixmode_tbl[4] = {"Fail", "Fail", " 2D ", " 3D "};// fix mode字符串
+#define RECV_SIZE 100 									// 10 *512 =5.2kB
+nmea_msg gpsx; 										// GPS信息
+__align(4) u8 dtbuf[50];   								// 打印缓存器
+const u8 *fixmode_tbl[4] = {"Fail", "Fail", " 2D ", " 3D "};				// fix mode字符串
 
 extern u16 sample_buff[SAMPLE_SIZE];
 
@@ -530,5 +530,4 @@ int main(void)
 
     }
 }
-
 
